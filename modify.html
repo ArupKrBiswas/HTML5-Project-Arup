@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modify Your Orders</title>
+	<link rel="stylesheet" type="text/css" href="assets/Semantic-UI-CSS-master/semantic.css">
+	<script src="assets/jquery-3.3.1.js"></script>
+	<script src="assets/Semantic-UI-CSS-master/semantic.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+</head>
+<body onload="getTask()">
+	<div class="ui container">
+		<div class="">
+			<div class="ui inverted stackable menu">
+		  		<div class="item">
+		   			 <i class="microchip icon"></i>
+		  		</div>
+		  		<a class="item" href="index.html">Home</a>
+		 	 	<a class="item" href="cart.html">Ordered Items</a>
+		  		<a class="item">Sign-in</a>
+			</div>
+			<div class="ui raised very padded text container segment">
+  				<h2 class="ui header">Order Details Modification</h2>
+  				<form id="modify-item" class="ui form" role="from" action="cart.html">
+				  <div class="field">
+				    <label>Name of the Buyer</label>
+				    <input id="buyer" name="buyer" type="text">
+				  </div>
+				  <div class="field">
+				    <label>Development Boards</label>
+				    <select name="skills" id="boards" class="ui fluid search dropdown">
+				    	<option value="Arduino UNO">Arduino UNO</option>
+				    	<option value="Arduino Mega">Arduino Mega</option>
+				    	<option value="Raspberry Pi">Raspberry Pi</option>
+				    	<option value="Intel Gallio">Intel Gallio</option>
+				    	<option value="L293D">L293D</option>
+				    	<option value="Intel 8085">Intel 8085</option>
+				    </select>
+				  </div>
+				  <div class="field">
+				  	<label>Date of Order</label>
+				  	<input id="date" type="date" name="datepic" class="form-control">
+				  </div>
+				  <div class="field">
+				  	<label>Time</label>
+				  	<input id="time" type="time" name="timepic" class="form-control">
+				  </div>
+
+				  <input type="hidden" id="order_id" value="">
+
+				<button type="submit" class="ui inverted green button" style="font-size: 20px; padding: 10px 50px; margin-top: 50px;">Submit</button>
+			</form>
+			</div>
+	</div>
+</body>
+</html>
