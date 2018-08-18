@@ -41,12 +41,13 @@ $(document).ready(function()
 
 			$.each(orderlist, function(key,value){
 				$('#task-table').append('<tr id="'+ value.id +'">' +
-										'<td>' + value.buy + '</td>' +
-										'<td>' + value.board_name + '</td>' +
-										'<td>' + value.order_date + '</td>' +
-										'<td>' + value.order_time + '</td>' +
-										'<td><a href="modify.html?id='+ value.id +'">Edit</a> | <a href="#" id="remove-task" data-id="'+ value.id +'">Remove</a></td>' +
-										'</tr>');
+							'<td>' + value.id + '</td>' +
+							'<td>' + value.buy + '</td>' +
+							'<td>' + value.board_name + '</td>' +
+							'<td>' + value.order_date + '</td>' +
+							'<td>' + value.order_time + '</td>' +
+							'<td><a href="modify.html?id='+ value.id +'">Edit</a> | <a href="#" id="remove-task" data-id="'+ value.id +'">Remove</a></td>' +
+							'</tr>');
 
 				//$('#task-table').remove();
 
