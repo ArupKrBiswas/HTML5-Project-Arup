@@ -73,7 +73,7 @@ $(document).ready(function()
  
 		var buy = $('#buyer').val();
 		var board_name = $('#boards').val();
-		var order_date = 'Entry' + newDate.getDate() + '/' + (newDate.getMonth()+1) + '/' + newDate.getFullYear(); 
+		var order_date = 'Entry ' + newDate.getDate() + '/' + (newDate.getMonth()+1) + '/' + newDate.getFullYear(); 
 		//$('#date').val();
 		var order_time = newDate.getHours() + ':'  
                 + newDate.getMinutes() + ':' 
