@@ -73,8 +73,13 @@ $(document).ready(function()
  
 		var buy = $('#buyer').val();
 		var board_name = $('#boards').val();
-		var order_date = $('#date').val();
-		var order_time = $('#time').val();
+		var order_date = 'Entry' + newDate.getDate() + '/' + (newDate.getMonth()+1) + '/' + newDate.getFullYear(); 
+		//$('#date').val();
+		var order_time = newDate.getHours() + ':'  
+                + newDate.getMinutes() + ':' 
+                + newDate.getSeconds();
+
+		//$('#time').val();
 
 		//varification
 		if(buy == '')
@@ -129,10 +134,21 @@ $(document).ready(function()
 	{
 		var id = $('#order_id').val();
 
+		var currentdate = new Date(); 
+
 		var buy = $('#buyer').val();
 		var board_name = $('#boards').val();
-		var order_date = $('#date').val();
-		var order_time = $('#time').val();
+		var order_date = 'Modified ' + currentdate.getDate() + '/'
+                + (currentdate.getMonth()+1)  + '/'
+                + currentdate.getFullYear();
+
+		//$('#date').val();
+
+		var order_time = currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+
+		//$('#time').val();
 
 		orderlist = JSON.parse(localStorage.getItem('orders'));
 
